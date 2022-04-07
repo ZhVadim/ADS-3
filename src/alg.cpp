@@ -15,6 +15,8 @@ int cbinsearch(int *arr, int size, int value) {
                     kol += 1;
                 }
                 return kol;
+            } else {
+                return 1;
             }
         } else if (arr[C] < value) {
             N = C + 1;
