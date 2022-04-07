@@ -10,12 +10,14 @@ int cbinsearch(int *arr, int size, int value) {
             if (arr[C - 1] != value && arr[C + 1] != value) {
                 kol += 1;
                 return kol;
-            } else if (arr[C - 1] = value && arr[C + 1] != value) {
+            } 
+            else if (arr[C - 1] = value && arr[C + 1] != value) {
                 for (int j = C; arr[j] == value; j--) {
                     kol += 1;
                 }
                 return kol;
-            } else if (arr[C - 1] != value && arr[C + 1] == value) {
+            } 
+            else if (arr[C - 1] != value && arr[C + 1] == value) {
                 for (int p = C; arr[p] == value; p++) {
                     kol += 1;
                 }
@@ -29,7 +31,8 @@ int cbinsearch(int *arr, int size, int value) {
                 }
                 return kol;
             }
-        } else if (arr[C] < value) {
+        } 
+        else if (arr[C] < value) {
             N = C + 1;
         } else {
             K = C;
