@@ -7,7 +7,7 @@ int cbinsearch(int *arr, int size, int value) {
     for (int i = 0; i < K; i++) {
         int C = N + (K - N) / 2;
         if (arr[C] == value) {
-            if (arr[C - 1] != value || arr[C + 1] != value) {
+            if (arr[C - 1] == value || arr[C + 1] == value) {
                 for (int j = C; arr[j] == value; j--) {
                     kol += 1;
                 }
